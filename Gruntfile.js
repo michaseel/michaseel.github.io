@@ -314,6 +314,16 @@ module.exports = function (grunt) {
             '*.html'
           ]
         }]
+      },
+      deploy: {
+        files: [{
+          expand: true,
+          cwd: '<%= folders.dist %>',
+          dest: './',
+          src: [
+            '**'
+          ]
+        }]
       }
     },
     concurrent: {
@@ -373,8 +383,8 @@ module.exports = function (grunt) {
     'cmq',
     //'htmlmin',
     'cssmin',
-    'usemin'
-
+    'usemin',
+    'copy:deploy'
   ]);
 
 
