@@ -1,0 +1,144 @@
+/* @start: padding helper classes */
+.padding-medium {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.padding-medium-top {
+  padding-top: 1.7rem;
+}
+
+.padding-medium-bottom {
+  padding-bottom: 1.7rem;
+}
+
+.padding-large {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.padding-large-top {
+  padding-top: 3rem;
+}
+
+.padding-large-bottom {
+  padding-bottom: 3rem;
+}
+
+.padding-small {
+  display: block;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.padding-small-top {
+  padding-top: 0.8rem;
+}
+
+.padding-small-bottom {
+  padding-bottom: 0.8rem;
+}
+
+.padding-xsmall {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding-xsmall-top {
+  padding-top: 0.5rem;
+}
+
+.padding-xsmall-bottom {
+  padding-bottom: 0.5rem;
+}
+
+/* @end: padding helper classes */
+
+.no-margin {
+  margin: 0;
+}
+
+/* @start: Contextual color helper classes
+The following classes are already included in Bootstrap3:
+
+Contextual backgrounds:
+.bg-primary
+.bg-success
+.bg-info
+.bg-warning
+.bg-danger
+
+Contextual text colors:
+.text-muted
+.text-primary
+.text-success
+.text-info
+.text-warning
+.text-danger
+*/
+
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: @gray;
+  color: white;
+}
+.bg-gray-dark {
+  background-color: @gray-dark;
+  color: white;
+}
+.bg-black {
+  background-color: #000;
+  color: white;
+}
+.bg-gray-darker {
+  background-color: @gray-darker;
+  color: white;
+  a, a:hover {
+    color: white;
+  }
+}
+.bg-gray-light {
+  background-color: @gray-light;
+}
+.bg-gray-lighter {
+  background-color: @gray-lighter;
+}
+
+.text-black {
+  color: @gray-darker;
+  &:hover { color: #000;}
+}
+
+.text-white {
+  color: white;
+  &:hover { color: white;}
+}
+/* @end: Contextual color helper classes */
+
+
+
+/* @start: Mixins für direkte Mediaqueries */
+@xs: ~'(max-width: @{screen-xs-max})';
+@sm: ~'(min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})';
+@md: ~'(min-width: @{screen-md-min}) and (max-width: @{screen-md-max})';
+@lg: ~'(min-width: @{screen-lg-min})';
+
+@ipad: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px)';
+@ipad-landscape: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px) and (orientation : landscape)';
+@ipad-portrait: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px) and (orientation : portrait)';
+@iphone: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px)';
+@iphone-landscape: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px) and (orientation : landscape)';
+@iphone-portrait: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px) and (orientation : portrait)';
+@iphone5: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px)';
+@iphone5-landscape: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px) and (orientation : landscape)';
+@iphone5-portrait: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px) and (orientation : portrait)';
+
+@ios: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px), only screen and (min-device-width : 320px) and (max-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px), only screen and (min-device-width : 320px) and (max-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px)';
+
+@print: ~'only print';
+@retina: ~'only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)';
+
+/* @end: Mixins für direkte Mediaqueries */
+

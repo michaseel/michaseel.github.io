@@ -844,27 +844,4 @@
   }
 }
 
-// mseel: Mixin für direkte Mediaqueries
-@xs: ~'(max-width: @{screen-xs-max})';
-@sm: ~'(min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})';
-@md: ~'(min-width: @{screen-md-min}) and (max-width: @{screen-md-max})';
-@lg: ~'(min-width: @{screen-lg-min})';
-
-@ipad: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px)';
-@ipad-landscape: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px) and (orientation : landscape)';
-@ipad-portrait: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px) and (orientation : portrait)';
-@iphone: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px)';
-@iphone-landscape: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px) and (orientation : landscape)';
-@iphone-portrait: ~'only screen and (min-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px) and (orientation : portrait)';
-@iphone5: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px)';
-@iphone5-landscape: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px) and (orientation : landscape)';
-@iphone5-portrait: ~'only screen and (min-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px) and (orientation : portrait)';
-
-@ios: ~'only screen and (min-device-width : 768px) and (max-device-width : 768px) and (max-device-height : 1024px) and (min-device-height : 1024px), only screen and (min-device-width : 320px) and (max-device-width : 320px) and (min-device-height : 568px) and (max-device-height : 568px), only screen and (min-device-width : 320px) and (max-device-width : 320px) and (max-device-height : 480px) and (min-device-height : 480px)';
-
-@print: ~'only print';
-@retina: ~'only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)';
-
-
-
 
