@@ -1,0 +1,64 @@
+{
+    "loremshort": "Lorem Ipsum",
+    "thomas": "pal",
+    "loremmedium": "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est",
+    "loremlong": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "button_shopping_cart":
+        {
+            "fetch_bh":             "In meinem Bau+Hobby abholen",
+            "fetch_place":          "Bau+Hobby Oberwil",
+            "no_fetch_place":       "In Oberwil nicht abholbar",
+
+            "delivery":             "Nach Hause liefern lassen",
+            "no_delivery":          "Vorrübergehend nicht lieferbar",
+            "no_online":            "Online nicht verfügbar",
+
+            "status_fetch":         "5 Artikel sofort verfügbar",
+            "status_fetch_day":     "Ware wird für Sie bestellt und ist in 3-5 Tagen verfügbar.",
+            "status_fetch_place":   "Sofort verfügbar in einem anderen Markt.",
+
+            "status_delivery":      "Sofort lieferbar",
+            "status_delivery_day":  "In 3-5 Tagen versandbereit",
+            "status_delivery_week": "In 2 Wochen versandbereit",
+            "status_delivery_fetch":"Artikel in Ihrem Bau+Hobby verfügbar",
+
+            "button_fetch":         "Selbst abholen",
+            "button_delivery":      "Jetzt bestellen",
+            "button_market":        "Markt wählen",
+            "button_special_delivery":              "Anfragen",
+
+            "costs_fetch":          "Kostenlos abholen",
+            "costs_delivery":       "zzgl. Versandkosten",
+
+            "article_direct":       "Sie benötigen diesen Artikel sofort?",
+            "article_direct_status":"Verfügbarkeit in anderen Märkten prüfen."
+        },
+    "checkout": {
+        "button_save": "Speichern",
+        "button_cancel": "Abbrechen",
+        "button_forward": "Weiter",
+        "button_back": "Zurück",
+        "step0": {
+            "headline": "Anmeldung",
+            "login1":   "Ich habe bereits bei Bau+Hobby bestellt",
+            "login2":   "Bitte loggen Sie sich ein, um mit Ihrer Bestellung fortzufahren.",
+            "email":    "E-Mail-Adresse",
+            "passwort": "Passwort",
+            "passwortvergessen_lightboxlink":"Passwort vergessen?",
+            "passwortvergessen_headline":"Passwort vergessen?",
+            "passwortvergessen_text":"Bitte geben Sie Ihre E-Mail-Adresse ein. Sie erhalten dann in Kürze ein neues Passwort.",
+            "passwortvergessen_button":"Absenden",
+            "button_login":"Einloggen",
+            "register1": "Ich bin neu bei Bau+Hobby",
+            "register2": "Nutzen Sie die kostenlose Registrierung und profitieren Sie von vielen Vorteilen:",
+            "vorteil1": "Lieferstatus prüfen",
+            "vorteil2": "Verwalten von Adressen",
+            "vorteil3": "Speichern von Merklisten",
+            "button_register": "Registrieren + fortfahren",
+            "button_gast": "Ohne Registrierung fortfahren",
+            "trust1": "Sichere Bezahlung",
+            "trust2": "Sie bezahlen sicher durch SSL-Verschlüsselung",
+            "trust3": "Zahlarten"
+        }
+    }
+}

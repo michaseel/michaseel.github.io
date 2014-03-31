@@ -1,0 +1,130 @@
+/* @start: padding helper classes */
+.padding-medium {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.padding-medium-top {
+  padding-top: 1.7rem;
+}
+
+.padding-medium-bottom {
+  padding-bottom: 1.7rem;
+}
+
+.padding-large {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.padding-large-top {
+  padding-top: 3rem;
+}
+
+.padding-large-bottom {
+  padding-bottom: 3rem;
+}
+
+.padding-small {
+  display: block;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.padding-small-top {
+  padding-top: 0.8rem;
+}
+
+.padding-small-bottom {
+  padding-bottom: 0.8rem;
+}
+
+.padding-xsmall {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding-xsmall-top {
+  padding-top: 0.5rem;
+}
+
+.padding-xsmall-bottom {
+  padding-bottom: 0.5rem;
+}
+
+/* @end: padding helper classes */
+
+.no-margin {
+  margin: 0;
+}
+
+//mseel: custom row colors
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: @gray;
+  color: white;
+}
+.bg-gray-dark {
+  background-color: @gray-dark;
+  color: white;
+}
+.bg-black {
+  background-color: #000;
+  color: white;
+}
+.bg-gray-darker {
+  background-color: @gray-darker;
+  color: white;
+  a, a:hover {
+    color: white;
+  }
+}
+.bg-gray-light {
+  background-color: @gray-light;
+}
+.bg-gray-lighter {
+  background-color: @gray-lighter;
+}
+
+.text-black {
+  color: @gray-darker;
+  &:hover { color: #000;}
+}
+
+.text-white {
+  color: white;
+  &:hover { color: white;}
+}
+
+.teaser-link {
+  color: @text-color;
+  &:hover {
+    .text-white { color: #eee; }
+    color: @brand-primary;
+    text-decoration: none;
+    img {
+      opacity: 0.85;
+    }
+  }
+  transition: color 0.3s;
+  img {
+    transition: 0.3s;
+    -webkit-backface-visibility:hidden; /* Chrome, Safari, Opera */
+    backface-visibility:hidden;
+   }
+}
+
+.row.slide {
+  //transform: rotateX(65deg);
+  //transform-origin: 18% 0%;
+  //perspective: 950;-webkit-transform: scale(1) scaleZ(1.0) rotateX(65deg);
+  padding: 17rem 0;
+  @media @xs { padding: 6rem 0; }
+  //height: 30rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

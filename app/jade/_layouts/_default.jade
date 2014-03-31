@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title michaseel.de
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='michaseel, cologne', name='author')
+    meta(content='3 days', name='revisit-after')
+    meta(name='date', content=timestamp)
+
+    // build:css styles/main.css
+    link(href='styles/main.css', rel='stylesheet')
+    // endbuild
+
+  body(class=page)
+    include ../_mixins/_mixins
+    include _header
+    block content
+    include _footer
