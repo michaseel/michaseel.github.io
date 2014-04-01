@@ -1,46 +1,49 @@
 extends /_layouts/_default
 
 block content
+  #content
+    .row.slide(style="background-image: url(images/slice-person.jpg);")
+        .container
+          .col-xs-7.col-xs-offset-5
+            h1 Hi! I'm Michael
+            h2 i live in Cologne & <br>i love building the web...
 
-  .row.bg-black.slide(style="background-image: url(images/slice1.jpg)")
+    .row.bg-black.slide(style="background-image: url(images/slice-web.jpg)")
+      .container
+        .col-sm-12
+          h1 Testing Lorem longer long
+          h2 You like my style?
     .container
-      .col-sm-12
-        h1 Testing Lorem longer long
-        h2 You like my style?
-
-  .row.bg-black.slide(style="background-image: url(images/slice2.jpg)")
-    .container
-      .col-sm-12
-        h1 Testing Lorem longer long
-        h2 You like my style?
-  .container
-    .row
-      .col-lg-12
-        h1 Headlines
-        hr
-    .row
-      .col-lg-6
-        h1 h1 Lorem ipsum dolor sit amet
-        h2 h2 Lorem ipsum dolor sit amet
-        h3 h3 Lorem ipsum dolor sit amet
-        h4 h4 Lorem ipsum dolor sit amet
-        h5 h5 Lorem ipsum dolor sit amet
-        h6 h6 Lorem ipsum dolor sit amet
-        h1 h1 Lorem ipsum dolor sit amet
-        h2 h2 Lorem ipsum dolor sit amet
-        h3 h3 Lorem ipsum dolor sit amet
-        h4 h4 Lorem ipsum dolor sit amet
-        h5 h5 Lorem ipsum dolor sit amet
-        h6 h6 Lorem ipsum dolor sit amet
-        h1 h1 Lorem ipsum dolor sit amet
-        h2 h2 Lorem ipsum dolor sit amet
-        h3 h3 Lorem ipsum dolor sit amet
-        h4 h4 Lorem ipsum dolor sit amet
-        h5 h5 Lorem ipsum dolor sit amet
-        h6 h6 Lorem ipsum dolor sit amet
-        h1 h1 Lorem ipsum dolor sit amet
-        h2 h2 Lorem ipsum dolor sit amet
-        h3 h3 Lorem ipsum dolor sit amet
-        h4 h4 Lorem ipsum dolor sit amet
-        h5 h5 Lorem ipsum dolor sit amet
-        h6 h6 Lorem ipsum dolor sit amet
+      .row
+        .col-lg-12
+          h1 Headlines
+          hr
+      .row
+        .col-lg-6
+          h1 h1 Lorem ipsum dolor sit amet
+          h2 h2 Lorem ipsum dolor sit amet
+          h3 h3 Lorem ipsum dolor sit amet
+          h4 h4 Lorem ipsum dolor sit amet
+          h5 h5 Lorem ipsum dolor sit amet
+          h6 h6 Lorem ipsum dolor sit amet
+          h1 h1 Lorem ipsum dolor sit amet
+          h2 h2 Lorem ipsum dolor sit amet
+          h3 h3 Lorem ipsum dolor sit amet
+          h4 h4 Lorem ipsum dolor sit amet
+          h5 h5 Lorem ipsum dolor sit amet
+          h6 h6 Lorem ipsum dolor sit amet
+          h1 h1 Lorem ipsum dolor sit amet
+          h2 h2 Lorem ipsum dolor sit amet
+          h3 h3 Lorem ipsum dolor sit amet
+          h4 h4 Lorem ipsum dolor sit amet
+          h5 h5 Lorem ipsum dolor sit amet
+          h6 h6 Lorem ipsum dolor sit amet
+          h1 h1 Lorem ipsum dolor sit amet
+          h2 h2 Lorem ipsum dolor sit amet
+          h3 h3 Lorem ipsum dolor sit amet
+          h4 h4 Lorem ipsum dolor sit amet
+          h5 h5 Lorem ipsum dolor sit amet
+          h6 h6 Lorem ipsum dolor sit amet
+  svg(version='1.1', xmlns='http://www.w3.org/2000/svg')
+    filter#blur
+        fegaussianblur(stddeviation='3')

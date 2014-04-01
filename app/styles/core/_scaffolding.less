@@ -16,19 +16,20 @@
 
 html {
   font-size: @font-size-base;
-  @media @md { font-size: 14px; }
-  @media @sm { font-size: 12px; }
-  @media @xs { font-size: 11px; }
+  @media @lg { font-size: @rem-base-lg; }
+  @media @md { font-size: @rem-base-md; }
+  @media @sm { font-size: @rem-base-sm; }
+  @media @xs { font-size: @rem-base-xs; }
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
   font-family: @font-family-base;
   font-size: @font-size-base;
-  @media @md { font-size: 16px; }
-  @media @sm { font-size: 15px; }
-  @media @xs { font-size: 14px; }
-  @media @iphone, @iphone5 { font-size: 13px; }
+  @media @lg { font-size: @font-size-lg; }
+  @media @md { font-size: @font-size-md; }
+  @media @sm { font-size: @font-size-sm; }
+  @media @xs { font-size: @font-size-xs; }
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
