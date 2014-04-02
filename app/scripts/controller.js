@@ -31,7 +31,7 @@ $( window ).resize(function() {
 $(window).scroll(function(){
 
 
- $("canvas").css("-webkit-transform", "translatey(-" + $(window).scrollTop() + "px)");
+ $("canvas").css("transform", "translatey(-" + $(window).scrollTop() + "px)");
 
 
 
@@ -70,5 +70,5 @@ frost = function () {
 
 $(document).ready(function () {
     //$('body').append('<div id="contain"><canvas /></div>');
-    $('body').append('<svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="18"/></filter></svg>');
+    $('body').append('<svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="4"/></filter></svg>');
 });

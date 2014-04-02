@@ -53,19 +53,17 @@ header {
   z-index: 5;
   height: 96px;
   overflow: hidden;
-  -webkit-filter: blur(4px);
-  clip: rect(0, 2000px, 100px, 0);
+  //-webkit-filter: blur(4px);
+  //clip: rect(0, 2000px, 100px, 0);
   canvas {
-    //margin-top: -20px;
-    //margin-bottom: -20px;
-      //-webkit-filter: blur(4px);
-      //-moz-filter: blur(18px);
-      //-o-filter: blur(18px);
-      //-ms-filter: blur(18px);
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
       //filter: url(#blur);
-      //filter: blur(18px);
-      //filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='18');
-      //filter: url(#blur-effect-1);
+      filter: blur(4px);
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+      filter: url(#blur-effect-1);
   }
     top:0;
     position: fixed;
