@@ -31,7 +31,7 @@ $( window ).resize(function() {
 $(window).scroll(function(){
 
 
- $("#blurimage").css("-webkit-transform", "translatey(-" + $(window).scrollTop() + "px)");
+ $("canvas").css("-webkit-transform", "translatey(-" + $(window).scrollTop() + "px)");
 
 
 
@@ -55,9 +55,9 @@ frost = function () {
         var w = $('#content').width();
         html2canvas($('#content'), {
             onrendered: function (canvas) {
-                 var strDataURI = canvas.toDataURL("image/jpeg");
-                $(".blurheader").append('<img id="blurimage" src="'+strDataURI+'">');
-                 //$(".blurheader canvas").attr("id","canvas");
+                $(".blurheader").append(canvas);
+                 $(".blurheader canvas").attr("id","canvas");
+
             }
         });
         //$('canvas, #header, #cover').hide();
