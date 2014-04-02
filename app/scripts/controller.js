@@ -10,56 +10,64 @@ var   NXB = {};
 /******* Global Event Handlers *********/
 $(document).ready(function () {
   // Fired when DOM is ready = before Page is loaded
+  console.log(navigator.appVersion);
+  NXB.isIE = (navigator.appVersion.indexOf("Trident")!=-1);
+  if (NXB.isIE){
+    $('.blurheader').hide();
+  }
+  else frost();
 
 });
 
 
 $(window).load(function () {
   // Fired when Page is loaded
-  frost();
+  //frost();
 });
 
 $( window ).resize(function() {
   // Fired when window is resized
-  frost();
+ if(!NXB.isIE) frost();
 });
 
 
 
 
-//var lastScrollTop = 0;
+var lastScrollTop = 0;
 $(window).scroll(function(){
 
 
- $("canvas").css("transform", "translatey(-" + $(window).scrollTop() + "px)");
+ if(!NXB.isIE) $("canvas").css("transform", "translatey(-" + $(window).scrollTop() + "px)");
 
 
 
 
   // Fired when window is scrolled
 //frost();
+
   /*var st = $(this).scrollTop();
    if (st > lastScrollTop){
        $('header').addClass('header-small');
    } else {
       $('header').removeClass('header-small');
    }
-   lastScrollTop = st;
-*/
+   lastScrollTop = st;*/
+
 })
 
 
 frost = function () {
-        $(".blurheader").empty().css('height', $('header').height());
 
-        var w = $('#content').width();
+        var scrollpos = $(window).scrollTop();
+        //var w = $('#content').width();
         html2canvas($('#content'), {
             onrendered: function (canvas) {
-                $(".blurheader").append(canvas);
-                 $(".blurheader canvas").attr("id","canvas");
-
+                $(".blurheader").empty().css('height', $('header').height()).append(canvas);
+                $(".blurheader canvas").attr("id","canvas");
+                window.scrollTo(40,scrollpos);
             }
         });
+
         //$('canvas, #header, #cover').hide();
         /*$('#cover').fadeIn('slow', function () {
             $('#header').fadeIn('slow');

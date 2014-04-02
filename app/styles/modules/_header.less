@@ -4,8 +4,16 @@ header {
   transition: all 0.5s;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.5);
+  .glyphicon {
+    margin-right: 5px;
+    margin-top: 0.4rem;
+    @media @xs {margin-top: 0.7rem; }
+  }
   &:hover { opacity: 1; }
-  h1 { margin: 0; }
+  .h2 {
+    margin: 0;
+    margin-top: 0.7rem;
+  }
   a {
   	transition: text-shadow 0.3s;
   	color: #fff;
@@ -28,7 +36,7 @@ header {
 
 
   > .container > .row {
-    padding: 1.7rem 0;
+    padding: 0.4rem 0;
     transition: padding 1s;
    }
 
