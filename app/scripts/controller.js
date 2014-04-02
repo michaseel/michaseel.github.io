@@ -31,7 +31,7 @@ $( window ).resize(function() {
 $(window).scroll(function(){
 
 
- $("canvas").css("-webkit-transform", "translatey(-" + $(window).scrollTop() + "px)");
+ $("#blurimage").css("-webkit-transform", "translatey(-" + $(window).scrollTop() + "px)");
 
 
 
@@ -55,8 +55,9 @@ frost = function () {
         var w = $('#content').width();
         html2canvas($('#content'), {
             onrendered: function (canvas) {
-                $(".blurheader").append(canvas);
-                 $(".blurheader canvas").attr("id","canvas");
+                 var strDataURI = canvas.toDataURL("image/jpeg");
+                $(".blurheader").append('<img id="blurimage" src="'+strDataURI+'">');
+                 //$(".blurheader canvas").attr("id","canvas");
             }
         });
         //$('canvas, #header, #cover').hide();
@@ -68,6 +69,6 @@ frost = function () {
 /********** Global Functions ***********/
 
 $(document).ready(function () {
-    $('body').append('<div id="contain"><canvas /></div>');
-    $('body').append('<div id="cover"></div><svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="2"/></filter></svg>');
+    //$('body').append('<div id="contain"><canvas /></div>');
+    $('body').append('<svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="18"/></filter></svg>');
 });
