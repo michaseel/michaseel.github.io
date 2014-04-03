@@ -2,8 +2,11 @@ header {
   z-index: 6;
   opacity: 1;
   transition: all 0.5s;
-  overflow: hidden;
+  //overflow: hidden;
   background-color: rgba(255, 255, 255, 0.5);
+  .container {
+    position: relative;
+  }
   .glyphicon {
     margin-right: 5px;
     margin-top: 0.4rem;
@@ -11,8 +14,7 @@ header {
   }
   &:hover { opacity: 1; }
   .h2 {
-    margin: 0;
-    margin-top: 0.7rem;
+    margin: 0.7rem 0 0 6rem;
   }
   a {
   	transition: text-shadow 0.3s;
@@ -48,6 +50,17 @@ header {
    }
   }
 }
+.logo {
+  background: url(../images/michaseel-logo.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  z-index: 6;
+  height: 10rem;
+  top:-20px;
+  position: absolute;
+  left: 15px;
+  width: 85px;
+}
 .fadeout {
   z-index: 5;
   height: 96px;
@@ -71,7 +84,7 @@ header {
       filter: url('/filters.svg#blur');
       //filter: blur(4px);
       //filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
-      //filter: url(#blur-effect-1);
+      //filter: url('#svg-image-blur');
   }
     top:0;
     position: fixed;

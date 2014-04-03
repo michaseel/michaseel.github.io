@@ -32,14 +32,16 @@ $( window ).resize(function() {
 
 
 
-
+var CanvasStyle;
 var lastScrollTop = 0;
+
 $(window).scroll(function(){
 
 
- if(!NXB.isIE) $("canvas").css("transform", "translatey(-" + $(window).scrollTop() + "px)");
+ //if(!NXB.isIE) $("canvas").css("transform", "translate3D(0,-" + $(window).scrollTop() + "px,0)");
 
-
+CanvasStyle.MozTransform = "translate3D(0,-" + $(window).scrollTop() + "px, 0)";
+CanvasStyle.webkitTransform = "translate3D(0,-" + $(window).scrollTop() + "px, 0)";
 
 
   // Fired when window is scrolled
@@ -62,9 +64,11 @@ frost = function () {
         //var w = $('#content').width();
         html2canvas($('#content'), {
             onrendered: function (canvas) {
+                //canvas.style.webkitFilter = "blur(13px)";
                 $(".blurheader").empty().css('height', $('header').height()).append(canvas);
                 $(".blurheader canvas").attr("id","canvas");
                 window.scrollTo(40,scrollpos);
+                CanvasStyle = document.getElementById('canvas').style;
             }
         });
 
@@ -78,5 +82,5 @@ frost = function () {
 
 $(document).ready(function () {
     //$('body').append('<div id="contain"><canvas /></div>');
-    $('body').append('<svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="4"/></filter></svg>');
+    $('body').append('<svg id="svg-image-blur"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="5"/></filter></svg>');
 });
