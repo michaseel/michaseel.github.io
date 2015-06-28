@@ -1,7 +1,7 @@
 nx-bootstrap
 ============
 
-nexum bootstrap  
+nexum bootstrap  d
 
 
 ## Folder Structure
